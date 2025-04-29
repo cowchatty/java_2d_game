@@ -1,8 +1,8 @@
-import java.awt.event.KeyEvent;
 import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -29,7 +29,7 @@ public class Player {
         try {
             // you can use just the filename if the image file is in your
             // project folder, otherwise you need to provide the file path.
-            image = ImageIO.read(new File("images/player.png"));
+            image = ImageIO.read(new File("images/black-diamond.png"));
         } catch (IOException exc) {
             System.out.println("Error opening image file: " + exc.getMessage());
         }
